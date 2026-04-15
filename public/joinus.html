@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Us — I AM A RECRUITER</title>
+  <meta name="description" content="Join India's premier TA community. Connect with 1000+ recruiters, find mentors, and grow your career." />
+  <link rel="stylesheet" href="/css/style.css" />
+  <!-- IMPORTANT: Replace YOUR_APPS_SCRIPT_URL_HERE with your deployed Google Apps Script URL -->
+  <script>window.APPS_SCRIPT_URL = 'YOUR_APPS_SCRIPT_URL_HERE';</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="/" class="logo" aria-label="I AM A RECRUITER Home">
+    <span class="logo-black-block">I AM A</span>
+    <span class="logo-white-block">RECRUITER<sup class="logo-tm">™</sup></span>
+  </a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/mentorship">Mentorship</a>
+    <a href="/blog">IAAR Blogs</a>
+    <a href="/events">Events</a>
+    <a href="/joinus" class="nav-cta active">Join Now</a>
+  </div>
+  <button class="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu">
+  <a href="/">Home</a>
+  <a href="/mentorship">Mentorship</a>
+  <a href="/blog">IAAR Blogs</a>
+  <a href="/events">Events</a>
+  <a href="/joinus">Join Now →</a>
+</div>
+
+<main class="page-wrapper">
+  <div class="joinus-layout">
+
+    <!-- LEFT PANEL -->
+    <div class="joinus-left">
+      <div>
+        <p class="section-label section-label-white" style="margin-bottom:20px;">Welcome to IAAR</p>
+        <h1 class="joinus-left-title">Say<br/><span>Hello</span></h1>
+        <p class="joinus-left-desc">
+          Welcome to I AM A RECRUITER Community! Stay connected and never miss out on exciting opportunities — webinars, networking events, and real conversations that matter.
+        </p>
+
+        <div class="joinus-perks">
+          <div class="joinus-perk">
+            <div class="joinus-perk-icon">🤝</div>
+            <div class="joinus-perk-text">Connect with 1000+ Talent Acquisition professionals across India</div>
+          </div>
+          <div class="joinus-perk">
+            <div class="joinus-perk-icon">🎯</div>
+            <div class="joinus-perk-text">Access 15+ expert mentors with 10+ years of TA experience</div>
+          </div>
+          <div class="joinus-perk">
+            <div class="joinus-perk-icon">🎙️</div>
+            <div class="joinus-perk-text">Join exclusive webinars, masterclasses & city meetups</div>
+          </div>
+          <div class="joinus-perk">
+            <div class="joinus-perk-icon">💼</div>
+            <div class="joinus-perk-text">Free access to job postings on the IAAR Job Portal</div>
+          </div>
+          <div class="joinus-perk">
+            <div class="joinus-perk-icon">🚫</div>
+            <div class="joinus-perk-text">Zero sales pitches — just genuine connections and knowledge</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT PANEL: FORM -->
+    <div class="joinus-right">
+      <div class="form-title">Join the Community</div>
+      <p class="form-subtitle">Fill in your details and we'll add you to the IAAR family.</p>
+
+      <form id="joinForm" novalidate>
+
+        <div class="form-group">
+          <label class="form-label" for="name">Full Name <span>*</span></label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="Prafulla Deori" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="email">Email ID <span>*</span></label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="you@company.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone — Mobile <span>*</span></label>
+            <input class="form-input" type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="jobTitle">Job Title <span>*</span></label>
+            <input class="form-input" type="text" id="jobTitle" name="jobTitle" placeholder="Senior Talent Acquisition Manager" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="company">Current Company / Organisation <span>*</span></label>
+            <input class="form-input" type="text" id="company" name="company" placeholder="Acme Corp" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="location">Your Current Location <span>*</span></label>
+            <input class="form-input" type="text" id="location" name="location" placeholder="Bangalore, India" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="linkedin">LinkedIn Profile URL <span>*</span></label>
+            <input class="form-input" type="url" id="linkedin" name="linkedin" placeholder="linkedin.com/in/yourname" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Areas of Interest</label>
+          <div class="interests-grid">
+            <label class="interest-check">
+              <input type="checkbox" name="interests" value="Podcast" />
+              <span>🎙️ Podcast</span>
+            </label>
+            <label class="interest-check">
+              <input type="checkbox" name="interests" value="Panel Discussion" />
+              <span>🗣️ Panel Discussion</span>
+            </label>
+            <label class="interest-check">
+              <input type="checkbox" name="interests" value="Mentorship" />
+              <span>🎯 Mentorship</span>
+            </label>
+            <label class="interest-check">
+              <input type="checkbox" name="interests" value="MasterClass" />
+              <span>🎓 MasterClass</span>
+            </label>
+            <label class="interest-check">
+              <input type="checkbox" name="interests" value="Speaking" />
+              <span>📢 Speaking</span>
+            </label>
+            <label class="interest-check">
+              <input type="checkbox" name="interests" value="Guest Lecture" />
+              <span>📝 Guest Lecture</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="referrer">How did you hear about us?</label>
+          <input class="form-input" type="text" id="referrer" name="referrer" placeholder="LinkedIn, Friend, Event, etc." />
+        </div>
+
+        <div style="margin-bottom:24px;">
+          <label class="interest-check" style="align-items:flex-start;gap:12px;">
+            <input type="checkbox" required style="width:18px;height:18px;accent-color:var(--red);margin-top:2px;flex-shrink:0;" />
+            <span style="font-size:13px;color:var(--gray-dark);line-height:1.5;">I agree to the community terms and consent to being contacted by I AM A RECRUITER with updates, opportunities, and community news.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="form-submit">Join the Community</button>
+
+        <div id="formError" class="form-error"></div>
+      </form>
+
+      <div id="formSuccess" class="form-success">
+        <div class="form-success-icon">🎉</div>
+        <div class="form-success-title">Welcome to IAAR!</div>
+        <p class="form-success-text">You're officially part of India's premier TA community. We'll be in touch soon with everything you need to get started. Stay connected!</p>
+        <div style="margin-top:24px;">
+          <a href="/" class="btn btn-black">Back to Home</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
